@@ -40,5 +40,15 @@ namespace Code_Projet
             }
             return found;
         }
+
+        public void Add_Mot(string mot)
+        {
+            this.words.Add(mot);
+        }
+
+        public override string ToString()
+        {
+            return "Le joueur " + this.name + " a un score de " + this.score + " et à trouvé " + this.words.Count + " mots";
+        }
     }
 }
