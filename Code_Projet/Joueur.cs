@@ -46,7 +46,7 @@ namespace Code_Projet
             this.words.Add(mot);
         }
 
-        public override string ToString()
+        public string toString()
         {
             return "Le joueur " + this.name + " a un score de " + this.score + " et à trouvé " + this.words.Count + " mots";
         }
