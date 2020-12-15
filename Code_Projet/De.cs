@@ -14,6 +14,8 @@ namespace Code_Projet
 
         public De()
         {
+            Random ran = new Random();
+            this.Lance(ran);
 
 
         }
@@ -23,14 +25,14 @@ namespace Code_Projet
             get { return this.de; }
         }
 
-        static void ReadFile(string path)
+        public static void ReadFile(string path)
         {
             try
             {
                 StreamReader sr = new StreamReader(path);
                 while (sr.Peek() >= 0)
                 {
-                    extract_de.Enqueue(sr.ReadLine().ToUpper());
+                    extract_de.Enqueue(sr.ReadLine());
 
 
 
@@ -55,9 +57,11 @@ namespace Code_Projet
         public void Lance(Random r)
         {
             char separator = ';';
-            string[] de_line = extract_de.Dequeue().Split(separator);
+            string[] de_line = extract_de.Dequeue().ToUpper().Split(separator);
+            
             bool essai = char.TryParse(de_line[r.Next(0, de_line.Length)], out this.de);
-            if (!essai) Console.WriteLine("Votre fichier n'est pas dans le bon format, veuillez seulement mettree des caractères et des " + separator);
+            
+            if (!essai) Console.WriteLine("Votre fichier n'est pas dans le bon format, veuillez seulement mettre des caractères et des " + separator);
 
 
 
@@ -67,6 +71,7 @@ namespace Code_Projet
         {
             return "La lettre affichée du dé est : " + this.de;
         }
+
 
     }
 }

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace Code_Projet
 {
@@ -44,6 +45,28 @@ namespace Code_Projet
         public void Add_Mot(string mot)
         {
             this.words.Add(mot);
+            switch (mot.Length)
+            {
+                case 2:
+                    this.score += 1;
+                    break;
+                case 3:
+                    this.score += 2;
+                    break;
+                case 4:
+                    this.score += 3;
+                    break;
+                case 5:
+                    this.score += 4;
+                    break;
+                case 6:
+                    this.score += 5;
+                    break;
+                default:
+                    this.score += 11;
+                    break;
+
+            }
         }
 
         public string toString()

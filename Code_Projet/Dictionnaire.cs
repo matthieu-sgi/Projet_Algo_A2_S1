@@ -39,9 +39,12 @@ namespace Code_Projet
                 while (sr.Peek() >= 0)
                 {
                     int a;
-                    if (!int.TryParse(sr.ReadLine(), out a))
+                    string temp = sr.ReadLine();
+                    if (!int.TryParse(temp, out a))
                     {
-                        dico.Add(sr.ReadLine().ToUpper());
+                        
+                        
+                        dico.Add(temp.ToUpper());
                     }
 
 
