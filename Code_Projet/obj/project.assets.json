@@ -1,26 +1,27 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    ".NETCoreApp,Version=v5.0": {},
+    ".NETCoreApp,Version=v5.0/win7-x86": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": []
+    ".NETCoreApp,Version=v5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\matth\\.nuget\\packages\\": {}
+    "C:\\Users\\hugos\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VS Projets\\A2 S1\\Projet_A2_S1\\Projet_Algo_A2_S1\\Code_Projet\\Code_Projet.csproj",
+      "projectUniqueName": "C:\\Users\\hugos\\Desktop\\C Sharp A2\\Projet rigolo\\Projet_Algo_A2_S1\\Code_Projet\\Code_Projet.csproj",
       "projectName": "Code_Projet",
-      "projectPath": "D:\\VS Projets\\A2 S1\\Projet_A2_S1\\Projet_Algo_A2_S1\\Code_Projet\\Code_Projet.csproj",
-      "packagesPath": "C:\\Users\\matth\\.nuget\\packages\\",
-      "outputPath": "D:\\VS Projets\\A2 S1\\Projet_A2_S1\\Projet_Algo_A2_S1\\Code_Projet\\obj\\",
+      "projectPath": "C:\\Users\\hugos\\Desktop\\C Sharp A2\\Projet rigolo\\Projet_Algo_A2_S1\\Code_Projet\\Code_Projet.csproj",
+      "packagesPath": "C:\\Users\\hugos\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hugos\\Desktop\\C Sharp A2\\Projet rigolo\\Projet_Algo_A2_S1\\Code_Projet\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\matth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hugos\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -32,7 +33,6 @@
       },
       "frameworks": {
         "net5.0": {
-          "targetAlias": "net5.0",
           "projectReferences": {}
         }
       },
@@ -44,23 +44,12 @@
     },
     "frameworks": {
       "net5.0": {
-        "targetAlias": "net5.0",
-        "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48"
-        ],
-        "assetTargetFallback": true,
-        "warn": true,
-        "frameworkReferences": {
-          "Microsoft.NETCore.App": {
-            "privateAssets": "all"
-          }
-        },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win7-x86": {
+        "#import": []
       }
     }
   }
