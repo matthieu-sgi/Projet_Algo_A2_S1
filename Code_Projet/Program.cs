@@ -9,8 +9,8 @@ namespace Code_Projet
     {
         static void Main(string[] args)
         {
-            string path_fichier_de = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + @"\Fichiers_importes\Des.txt";
-            string path_Dictionnaire_Francais = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + @"\Fichiers_importes\Dictionnaire.txt";
+            string path_fichier_de =  @".\Fichiers_importes\Des.txt"; //System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) +
+            string path_Dictionnaire_Francais =  @".\Fichiers_importes\Dictionnaire.txt"; //System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) +
             //string path_fichier_de = @"\Fichiers_importés\Des.txt";
             //string path_Dictionnaire_Francais =@"\Fichiers_importés\Dictionnaire.txt";
             DateTime start = DateTime.Now;
@@ -23,8 +23,9 @@ namespace Code_Projet
             while((DateTime.Now - start).Minutes <= 6)
             {
                 if(counter<joueurs.Count){
-                    
+                    Console.WriteLine("Au tour du joueur " + counter);
                     game.Tour(counter);
+                    
                     
                 }
                 else counter = 0;

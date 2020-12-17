@@ -10,6 +10,11 @@ namespace Code_Projet
         private int score;
         private List<string> words = new List<string>();
 
+        public int Score
+        {
+            get { return this.score; }
+        }
+
         public Joueur(string _name, int _score, List<string> _words)
         {
             this.name = _name;
@@ -21,7 +26,7 @@ namespace Code_Projet
         {
             this.name = _name;
             this.score = 0;
-            this.words = null;
+            
         }
 
 
