@@ -15,7 +15,10 @@ namespace Code_Projet
         {
             this.Create_Plateau(_path_de);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public string toString()  //Méthode toString permettant d'afficher le plateau de jeu dans l'état actuel.
         {
             string s = "Le plateau est le suivant : \n";
@@ -33,10 +36,14 @@ namespace Code_Projet
             }
             return s;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="path_de"></param>
         public void Create_Plateau(string path_de)
         {
             De.ReadFile(path_de);
+
             for (int i = 0; i < 4; i++)
             {
                 for (int j = 0; j < 4; j++)
@@ -45,7 +52,11 @@ namespace Code_Projet
                 }
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="mot"></param>
+        /// <returns></returns>
         public bool Test_Plateau(string mot)
         {
             Stack<int[]> PileLettreDepart = new Stack<int[]>();
@@ -92,7 +103,14 @@ namespace Code_Projet
         }
 
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="mot"></param>
+        /// <param name="ligne"></param>
+        /// <param name="colonne"></param>
+        /// <param name="plateauchar"></param>
+        /// <returns></returns>
         public bool Recursivite_Plateau(string mot, int ligne, int colonne, char[,] plateauchar)
 
         //plusieurs problèmes : d'abord, je n'arrive pas à
@@ -150,6 +168,15 @@ namespace Code_Projet
                 }
             }
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="lettre"></param>
+        /// <param name="ligne"></param>
+        /// <param name="colonne"></param>
+        /// <param name="plateauchar"></param>
+        /// <returns></returns>
         static Stack<int[]> Test_Voisin(char lettre, int ligne, int colonne, char[,] plateauchar)
         {
             Stack<int[]> piletab = new Stack<int[]>();
@@ -299,6 +326,9 @@ namespace Code_Projet
             return piletab;
 
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public void Print_plateau()
         {
             for (int i = 0; i < this.plateau.GetLength(0); i++)

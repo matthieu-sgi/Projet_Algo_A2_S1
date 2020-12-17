@@ -31,12 +31,13 @@ namespace Code_Projet
 
         public void Tour(int player_id)
         {
-            int temps_tour = 30; //30 pour 30 secondes
+            int temps_tour = 60; //30 pour 30 secondes
             DateTime start = DateTime.Now;
             this.monplateau = new Plateau(this.path_de);
             this.joueurs[player_id].Words.Clear();
+            
 
-            while ((DateTime.Now - start).Seconds <= temps_tour)
+            while ((DateTime.Now - start).TotalSeconds <= temps_tour)
             {
 
                 monplateau.Print_plateau();
@@ -48,11 +49,14 @@ namespace Code_Projet
 
 
                 Console.Write("Entrer votre mot : ");
+                
                 string mot = Console.ReadLine();
-                mot.ToUpper();
-                if ((DateTime.Now - start).Seconds <= temps_tour)
+                
+                mot = mot.ToUpper();
+
+                if ((DateTime.Now - start).TotalSeconds <= temps_tour)
                 {
-                    if (mot.Length - this.mondico.Nb_min_lettres < this.mondico.Dico_Complet.Count)
+                    if (mot != null && mot.Length - this.mondico.Nb_min_lettres < this.mondico.Dico_Complet.Count && mot.Length - this.mondico.Nb_min_lettres >= 0)
                     {
                         if (this.mondico.RechDichoRecursif(0, this.mondico.Dico_Complet[mot.Length - this.mondico.Nb_min_lettres].Split(this.mondico.Separator).Length, mot))
                         {

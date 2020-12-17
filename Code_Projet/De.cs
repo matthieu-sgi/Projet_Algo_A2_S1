@@ -20,11 +20,20 @@ namespace Code_Projet
 
         }
 
+        /// <summary>
+        /// Propriété retournant l
+        /// </summary>
+        /// <value></value>
         public char Get_Face_Superieur
         {
             get { return this.de; }
+            
         }
 
+        /// <summary>
+        /// Fonction à intitialiser avant tout appel de la classe de permettant de stocker le doc lié aux dés dans une queue static
+        /// </summary>
+        /// <param name="path"></param>
         public static void ReadFile(string path)
         {
             try
@@ -53,7 +62,10 @@ namespace Code_Projet
             }
 
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="r"></param>
         public void Lance(Random r)
         {
             char separator = ';';

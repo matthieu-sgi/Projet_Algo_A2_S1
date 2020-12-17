@@ -20,7 +20,10 @@ namespace Code_Projet
             get { return this.words; }
             set { this.words = value; }
         }
-
+        public string Name
+        {
+            get { return this.name; }
+        }
         public Joueur(string _name, int _score, List<string> _words)
         {
             this.name = _name;
