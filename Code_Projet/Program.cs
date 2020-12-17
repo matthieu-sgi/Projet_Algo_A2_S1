@@ -11,8 +11,7 @@ namespace Code_Projet
         {
             string path_fichier_de =  @".\Fichiers_importes\Des.txt"; //System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) +
             string path_Dictionnaire_Francais =  @".\Fichiers_importes\Dictionnaire.txt"; //System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) +
-            //string path_fichier_de = @"\Fichiers_importés\Des.txt";
-            //string path_Dictionnaire_Francais =@"\Fichiers_importés\Dictionnaire.txt";
+           
             DateTime start = DateTime.Now;
             List<Joueur> joueurs = new List<Joueur>(); 
             joueurs.Add(new Joueur("Matthieu"));
@@ -23,8 +22,9 @@ namespace Code_Projet
             while((DateTime.Now - start).Minutes <= 6)
             {
                 if(counter<joueurs.Count){
-                    Console.WriteLine("Au tour du joueur " + counter);
+                    Console.WriteLine("Au tour du joueur " + (counter+1) );
                     game.Tour(counter);
+                    counter++;
                     
                     
                 }

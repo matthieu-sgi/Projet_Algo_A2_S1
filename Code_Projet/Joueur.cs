@@ -15,6 +15,12 @@ namespace Code_Projet
             get { return this.score; }
         }
 
+        public List<string> Words
+        {
+            get { return this.words; }
+            set { this.words = value; }
+        }
+
         public Joueur(string _name, int _score, List<string> _words)
         {
             this.name = _name;
@@ -26,7 +32,7 @@ namespace Code_Projet
         {
             this.name = _name;
             this.score = 0;
-            
+
         }
 
 
@@ -72,6 +78,17 @@ namespace Code_Projet
                     break;
 
             }
+        }
+
+        public void Print_Words()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            foreach (string a in this.words)
+            {
+                Console.Write(a + " ");
+            }
+            Console.ForegroundColor = ConsoleColor.Gray;
+
         }
 
         public string toString()

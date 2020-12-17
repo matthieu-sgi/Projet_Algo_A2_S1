@@ -128,17 +128,25 @@ namespace Code_Projet
                     int a = tab[0];
                     for (int i = 1; i <= a; i++)
                     {
-                        tab = null;
-                        tab = piletab.Pop();
-                        piletemp = Test_Voisin(mot[1], tab[0], tab[1], plateauchar);
-                        tabtemp = piletemp.Pop();
-                        if (tabtemp[0] == 1)
+                        if (mot.Length < 2)
                         {
-                            break;
+                            return true;
+                        }
+                        else
+                        {
+                            tab = null;
+                            tab = piletab.Pop();
+                            piletemp = Test_Voisin(mot[1], tab[0], tab[1], plateauchar);
+                            tabtemp = piletemp.Pop();
+                            if (tabtemp[0] == 1)
+                            {
+                                break;
+                            }
+
                         }
                     }
-
                     return Recursivite_Plateau(mot.Remove(0, 1), tab[0], tab[1], plateauchar);
+
                 }
             }
         }
@@ -297,7 +305,7 @@ namespace Code_Projet
             {
                 for (int j = 0; j < this.plateau.GetLength(1); j++)
                 {
-                    Console.Write(this.plateau[i,j].Get_Face_Superieur+ " ");
+                    Console.Write(this.plateau[i, j].Get_Face_Superieur + " ");
                 }
                 Console.WriteLine();
             }
