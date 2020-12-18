@@ -37,7 +37,7 @@ namespace Code_Projet
             return s;
         }
         /// <summary>
-        /// 
+        /// Fonction de création de plateau en utilisant la fonction static de la classe De, il faut mettre en paramètre le chemin du fichier dé
         /// </summary>
         /// <param name="path_de"></param>
         public void Create_Plateau(string path_de)
@@ -194,7 +194,7 @@ namespace Code_Projet
             Stack<int[]> piletab = new Stack<int[]>();
             int compteurlettre = 0;
 
-            if (ligne == 0 && colonne == 0)  // Les test corresepondent aux différentes positions possibles de la lettre dont il faut examiner les voisins.
+            /*if (ligne == 0 && colonne == 0)  // Les test corresepondent aux différentes positions possibles de la lettre dont il faut examiner les voisins.
             {
                 for (int i = ligne; i <= ligne + 1; i++)
                 {
@@ -329,6 +329,19 @@ namespace Code_Projet
 
                     }
                 }
+            }*/
+            for(int i = ligne - 1;i<= ligne + 1; i++)
+            {
+                for(int j = colonne - 1; j<= colonne + 1; j++)
+                {
+                    if(i>= 0 && i<plateauchar.GetLength(0) && j>= 0 && j< plateauchar.GetLength(1))
+                    {
+                        int[] tab = { i, j };
+                        piletab.Push(tab);
+                        compteurlettre++;
+                        
+                    }
+                }
             }
             int[] tabcompteur = new int[2];
             tabcompteur[0] = compteurlettre;  // Ce tableau sert à avoir le nombre de fois qu'une lettre est présente autour de la position donnée. Cette information sera très utile pour la suite du programme.
@@ -338,7 +351,7 @@ namespace Code_Projet
 
         }
         /// <summary>
-        /// 
+        /// Fonction d'affichage propre du plateau en cours
         /// </summary>
         public void Print_plateau()
         {
