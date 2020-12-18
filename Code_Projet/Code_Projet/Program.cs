@@ -17,16 +17,16 @@ namespace Code_Projet
             List<Joueur> joueurs = new List<Joueur>(); //Création de la liste de joueurs
             //Ajout des joueurs
             bool wanting_an_IA = false;
-            Console.Write("Voulez-vous jouer contre une IA ? (y/N) : ");
+            Console.Write("Voulez-vous jouer contre une IA ? (IA ne fonctionne pas totalement) (y/N) : ");
             string retour_user = Console.ReadLine();
             retour_user = retour_user.ToUpper();
             bool test_ia = false;
 
-            while(!test_ia) //Choix de l'ajout de l'IA
+            while (!test_ia) //Choix de l'ajout de l'IA
             {
                 switch (retour_user)
                 {
-                    
+
                     case "Y":
                         wanting_an_IA = true;
                         test_ia = true;
@@ -38,6 +38,9 @@ namespace Code_Projet
                         test_ia = true;
                         break;
                     default:
+                        Console.Write("Veuilez entrer \"y\", \"n\" ou rien : ");
+                        retour_user = Console.ReadLine();
+                        retour_user = retour_user.ToUpper();
                         break;
 
                 }
@@ -49,7 +52,8 @@ namespace Code_Projet
                 joueurs.Add(new Joueur(Console.ReadLine()));
                 Console.WriteLine("Entrer le nom du joueur n°2");
                 joueurs.Add(new Joueur(Console.ReadLine()));
-            }else
+            }
+            else
             {
                 Console.WriteLine("Entrer le nom du joueur");
                 joueurs.Add(new Joueur(Console.ReadLine()));
@@ -61,7 +65,7 @@ namespace Code_Projet
             int counter_player = 0;
             int tour = 0;
 
-            while (tour < 2) //On a choisi de compter en nombre de tour de 1min (6 tours = 6 min)
+            while (tour < 6) //On a choisi de compter en nombre de tour de 1min (6 tours = 6 min)
             {
                 if (!wanting_an_IA)
                 {
