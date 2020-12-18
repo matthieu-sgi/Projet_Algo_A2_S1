@@ -224,14 +224,17 @@ namespace Code_Projet
         /// </summary>
         public void Print_plateau()
         {
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
             for (int i = 0; i < this.plateau.GetLength(0); i++)
             {
                 for (int j = 0; j < this.plateau.GetLength(1); j++)
+
                 {
                     Console.Write(this.plateau[i, j].Get_Face_Superieur + " ");
                 }
                 Console.WriteLine();
             }
+            Console.ForegroundColor = ConsoleColor.Gray;
         }
     }
 }

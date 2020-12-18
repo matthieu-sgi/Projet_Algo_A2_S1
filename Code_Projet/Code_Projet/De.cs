@@ -26,6 +26,7 @@ namespace Code_Projet
         public static Queue<string> De_extrait
         {
             get { return extract_de; }
+            set { De.extract_de = value; }
         }
 
        
