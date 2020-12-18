@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\VS Projets\\A2 S1\\Projet_A2_S1\\Projet_Algo_A2_S1\\Code_Projet\\Test_Unitaires_Projet\\Test_Unitaires_Projet.csproj": {}
+    "C:\\Users\\hugos\\Desktop\\C Sharp A2\\Projet rigolo\\Projet_Algo_A2_S1\\Code_Projet\\Test_Unitaires_Projet\\Test_Unitaires_Projet.csproj": {}
   },
   "projects": {
-    "D:\\VS Projets\\A2 S1\\Projet_A2_S1\\Projet_Algo_A2_S1\\Code_Projet\\Code_Projet\\Code_Projet.csproj": {
+    "C:\\Users\\hugos\\Desktop\\C Sharp A2\\Projet rigolo\\Projet_Algo_A2_S1\\Code_Projet\\Code_Projet\\Code_Projet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VS Projets\\A2 S1\\Projet_A2_S1\\Projet_Algo_A2_S1\\Code_Projet\\Code_Projet\\Code_Projet.csproj",
+        "projectUniqueName": "C:\\Users\\hugos\\Desktop\\C Sharp A2\\Projet rigolo\\Projet_Algo_A2_S1\\Code_Projet\\Code_Projet\\Code_Projet.csproj",
         "projectName": "Code_Projet",
-        "projectPath": "D:\\VS Projets\\A2 S1\\Projet_A2_S1\\Projet_Algo_A2_S1\\Code_Projet\\Code_Projet\\Code_Projet.csproj",
-        "packagesPath": "C:\\Users\\matth\\.nuget\\packages\\",
-        "outputPath": "D:\\VS Projets\\A2 S1\\Projet_A2_S1\\Projet_Algo_A2_S1\\Code_Projet\\Code_Projet\\obj\\",
+        "projectPath": "C:\\Users\\hugos\\Desktop\\C Sharp A2\\Projet rigolo\\Projet_Algo_A2_S1\\Code_Projet\\Code_Projet\\Code_Projet.csproj",
+        "packagesPath": "C:\\Users\\hugos\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hugos\\Desktop\\C Sharp A2\\Projet rigolo\\Projet_Algo_A2_S1\\Code_Projet\\Code_Projet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\matth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hugos\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +26,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -38,7 +37,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -54,21 +52,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\VS Projets\\A2 S1\\Projet_A2_S1\\Projet_Algo_A2_S1\\Code_Projet\\Test_Unitaires_Projet\\Test_Unitaires_Projet.csproj": {
+    "C:\\Users\\hugos\\Desktop\\C Sharp A2\\Projet rigolo\\Projet_Algo_A2_S1\\Code_Projet\\Test_Unitaires_Projet\\Test_Unitaires_Projet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VS Projets\\A2 S1\\Projet_A2_S1\\Projet_Algo_A2_S1\\Code_Projet\\Test_Unitaires_Projet\\Test_Unitaires_Projet.csproj",
+        "projectUniqueName": "C:\\Users\\hugos\\Desktop\\C Sharp A2\\Projet rigolo\\Projet_Algo_A2_S1\\Code_Projet\\Test_Unitaires_Projet\\Test_Unitaires_Projet.csproj",
         "projectName": "Test_Unitaires_Projet",
-        "projectPath": "D:\\VS Projets\\A2 S1\\Projet_A2_S1\\Projet_Algo_A2_S1\\Code_Projet\\Test_Unitaires_Projet\\Test_Unitaires_Projet.csproj",
-        "packagesPath": "C:\\Users\\matth\\.nuget\\packages\\",
-        "outputPath": "D:\\VS Projets\\A2 S1\\Projet_A2_S1\\Projet_Algo_A2_S1\\Code_Projet\\Test_Unitaires_Projet\\obj\\",
+        "projectPath": "C:\\Users\\hugos\\Desktop\\C Sharp A2\\Projet rigolo\\Projet_Algo_A2_S1\\Code_Projet\\Test_Unitaires_Projet\\Test_Unitaires_Projet.csproj",
+        "packagesPath": "C:\\Users\\hugos\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hugos\\Desktop\\C Sharp A2\\Projet rigolo\\Projet_Algo_A2_S1\\Code_Projet\\Test_Unitaires_Projet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\matth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hugos\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,10 +78,9 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\VS Projets\\A2 S1\\Projet_A2_S1\\Projet_Algo_A2_S1\\Code_Projet\\Code_Projet\\Code_Projet.csproj": {
-                "projectPath": "D:\\VS Projets\\A2 S1\\Projet_A2_S1\\Projet_Algo_A2_S1\\Code_Projet\\Code_Projet\\Code_Projet.csproj"
+              "C:\\Users\\hugos\\Desktop\\C Sharp A2\\Projet rigolo\\Projet_Algo_A2_S1\\Code_Projet\\Code_Projet\\Code_Projet.csproj": {
+                "projectPath": "C:\\Users\\hugos\\Desktop\\C Sharp A2\\Projet rigolo\\Projet_Algo_A2_S1\\Code_Projet\\Code_Projet\\Code_Projet.csproj"
               }
             }
           }
@@ -96,7 +93,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "MSTest.TestAdapter": {
               "target": "Package",
@@ -130,7 +126,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
