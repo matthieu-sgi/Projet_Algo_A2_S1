@@ -330,7 +330,7 @@ namespace Code_Projet
                     }
                 }
             }*/
-            for(int i = ligne - 1;i<= ligne + 1; i++)
+            /*for(int i = ligne - 1;i<= ligne + 1; i++)
             {
                 for(int j = colonne - 1; j<= colonne + 1; j++)
                 {
@@ -342,7 +342,7 @@ namespace Code_Projet
                         
                     }
                 }
-            }
+            }*/
             int[] tabcompteur = new int[2];
             tabcompteur[0] = compteurlettre;  // Ce tableau sert à avoir le nombre de fois qu'une lettre est présente autour de la position donnée. Cette information sera très utile pour la suite du programme.
             piletab.Push(tabcompteur);
