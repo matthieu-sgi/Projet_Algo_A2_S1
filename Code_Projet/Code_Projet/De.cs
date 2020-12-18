@@ -66,10 +66,12 @@ namespace Code_Projet
             catch (FileNotFoundException) //S'il ne trouve pas le fichier
             {
                 Console.WriteLine("Vous n'avez pas renseigné de fichier dé");
+                Console.ReadKey();
             }
             catch (SystemException ex) //Au cas où il y aurait d'autres exceptions
             {
                 Console.WriteLine(ex.ToString());
+                Console.ReadKey();
 
             }
 

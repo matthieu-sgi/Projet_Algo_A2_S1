@@ -61,7 +61,7 @@ namespace Code_Projet
             int counter_player = 0;
             int tour = 0;
 
-            while (tour <= 6) //On a choisi de compter en nombre de tour de 1min (6 tours = 6 min)
+            while (tour < 2) //On a choisi de compter en nombre de tour de 1min (6 tours = 6 min)
             {
                 if (!wanting_an_IA)
                 {
@@ -89,9 +89,9 @@ namespace Code_Projet
 
             //Bloc d'affichage du résultat
             Console.Clear();
-            Console.WriteLine("La partie est terminée !\nVoici les résultats :\n" + joueurs[1].Name + " : " + joueurs[1].Score + "point(s)\n" + joueurs[2].Name + " : " + joueurs[2].Score + "point(s)\n");
-            if (joueurs[1].Score < joueurs[2].Score) Console.WriteLine("La victoire revient à " + joueurs[2].Name);
-            else if (joueurs[1].Score > joueurs[2].Score) Console.WriteLine("La victoire revient à " + joueurs[1].Name);
+            Console.WriteLine("La partie est terminée !\nVoici les résultats :\n" + joueurs[0].Name + " : " + joueurs[0].Score + " point(s)\n" + joueurs[1].Name + " : " + joueurs[1].Score + " point(s)\n");
+            if (joueurs[0].Score < joueurs[1].Score) Console.WriteLine("La victoire revient à " + joueurs[1].Name);
+            else if (joueurs[0].Score > joueurs[1].Score) Console.WriteLine("La victoire revient à " + joueurs[0].Name);
             else Console.WriteLine("Egalité");
             Console.ReadKey();
 

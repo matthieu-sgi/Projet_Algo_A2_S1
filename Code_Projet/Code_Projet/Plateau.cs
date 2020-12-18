@@ -153,7 +153,7 @@ namespace Code_Projet
                             piletemp = Test_Voisin(mot[1], tab[0], tab[1], plateauchar);
                             tabtemp = piletemp.Pop();
 
-                            if (tabtemp[0] > 1) // Si la lettre est présente plus d'une fois, on refait la même chose : on regarde si la lettre suivante est présente à côté d'une des lettres actuelles pour choisir le chemin.
+                            if (tabtemp[0] > 1 && mot.Length > 2) // Si la lettre est présente plus d'une fois, on refait la même chose : on regarde si la lettre suivante est présente à côté d'une des lettres actuelles pour choisir le chemin.
                             {
                                 int b = tabtemp[0]; // Même compteur que a.
                                 for (int j = 1; j <= b; j++) //Même boucle for.

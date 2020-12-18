@@ -90,10 +90,12 @@ namespace Code_Projet
             catch (FileNotFoundException) //Si le chemin d'accès n'est pas le bon 
             {
                 Console.WriteLine("Vous n'avez pas renseigné de fichier dictionnaire");
+                Console.ReadKey();
             }
             catch (SystemException ex)//En cas de tout autre exception
             {
                 Console.WriteLine(ex.ToString());
+                Console.ReadKey();
 
             }
         }
