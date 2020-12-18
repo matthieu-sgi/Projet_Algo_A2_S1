@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\hugos\\.nuget\\packages\\": {}
+    "C:\\Users\\matth\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hugos\\Desktop\\C Sharp A2\\Projet rigolo\\Projet_Algo_A2_S1\\Code_Projet\\Code_Projet\\Code_Projet.csproj",
+      "projectUniqueName": "D:\\VS Projets\\A2 S1\\Projet_A2_S1\\Projet_Algo_A2_S1\\Code_Projet\\Code_Projet\\Code_Projet.csproj",
       "projectName": "Code_Projet",
-      "projectPath": "C:\\Users\\hugos\\Desktop\\C Sharp A2\\Projet rigolo\\Projet_Algo_A2_S1\\Code_Projet\\Code_Projet\\Code_Projet.csproj",
-      "packagesPath": "C:\\Users\\hugos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hugos\\Desktop\\C Sharp A2\\Projet rigolo\\Projet_Algo_A2_S1\\Code_Projet\\Code_Projet\\obj\\",
+      "projectPath": "D:\\VS Projets\\A2 S1\\Projet_A2_S1\\Projet_Algo_A2_S1\\Code_Projet\\Code_Projet\\Code_Projet.csproj",
+      "packagesPath": "C:\\Users\\matth\\.nuget\\packages\\",
+      "outputPath": "D:\\VS Projets\\A2 S1\\Projet_A2_S1\\Projet_Algo_A2_S1\\Code_Projet\\Code_Projet\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\hugos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\matth\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -32,6 +32,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -43,6 +44,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -58,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

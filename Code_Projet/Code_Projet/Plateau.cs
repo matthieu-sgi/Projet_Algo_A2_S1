@@ -194,155 +194,24 @@ namespace Code_Projet
             Stack<int[]> piletab = new Stack<int[]>();
             int compteurlettre = 0;
 
-            /*if (ligne == 0 && colonne == 0)  // Les test corresepondent aux différentes positions possibles de la lettre dont il faut examiner les voisins.
+            
+            for (int i = ligne - 1; i <= ligne + 1; i++)
             {
-                for (int i = ligne; i <= ligne + 1; i++)
+                for (int j = colonne - 1; j <= colonne + 1; j++)
                 {
-                    for (int n = colonne; n <= colonne + 1; n++)
+                    if (i >= 0 && i < plateauchar.GetLength(0) && j >= 0 && j < plateauchar.GetLength(1))
                     {
-                        if (plateauchar[i, n] == lettre)
+                        if (plateauchar[i, j] == lettre)
                         {
-                            int[] tab = { i, n };
+                            int[] tab = { i, j };
                             piletab.Push(tab);
-                            compteurlettre += 1;
+                            compteurlettre++;
                         }
-                    }
-                }
-            }
-            else if (ligne == 3 && colonne == 3)
-            {
-                for (int i = ligne - 1; i <= ligne; i++)
-                {
-                    for (int n = colonne - 1; n <= colonne; n++)
-                    {
-                        if (plateauchar[i, n] == lettre)
-                        {
-                            int[] tab = { i, n };
-                            piletab.Push(tab);
-                            compteurlettre += 1;
-                        }
-                    }
-                }
-            }
-            else if (ligne == 3 && colonne == 0)
-            {
-                for (int i = ligne - 1; i <= ligne; i++)
-                {
-                    for (int n = colonne; n <= colonne + 1; n++)
-                    {
-                        if (plateauchar[i, n] == lettre)
-                        {
-                            int[] tab = { i, n };
-                            piletab.Push(tab);
-                            compteurlettre += 1;
-                        }
-                    }
-                }
-            }
-            else if (ligne == 0 && colonne == 3)
-            {
-                for (int i = ligne; i <= ligne + 1; i++)
-                {
-                    for (int n = colonne - 1; n <= colonne; n++)
-                    {
-                        if (plateauchar[i, n] == lettre)
-                        {
-                            int[] tab = { i, n };
-                            piletab.Push(tab);
-                            compteurlettre += 1;
-                        }
-                    }
-                }
-            }
-            else if (ligne == 0)
-            {
-                for (int i = ligne; i <= ligne + 1; i++)
-                {
-                    for (int n = colonne - 1; n <= colonne + 1; n++)
-                    {
-                        if (plateauchar[i, n] == lettre)
-                        {
-                            int[] tab = { i, n };
-                            piletab.Push(tab);
-                            compteurlettre += 1;
-                        }
-                    }
-                }
-            }
-            else if (ligne == 3)
-            {
-                for (int i = ligne - 1; i <= ligne; i++)
-                {
-                    for (int n = colonne - 1; n <= colonne + 1; n++)
-                    {
-                        if (plateauchar[i, n] == lettre)
-                        {
-                            int[] tab = { i, n };
-                            piletab.Push(tab);
-                            compteurlettre += 1;
-                        }
-                    }
-                }
-            }
-            else if (colonne == 0)
-            {
-                for (int i = ligne - 1; i <= ligne + 1; i++)
-                {
-                    for (int n = colonne; n <= colonne + 1; n++)
-                    {
-                        if (plateauchar[i, n] == lettre)
-                        {
-                            int[] tab = { i, n };
-                            piletab.Push(tab);
-                            compteurlettre += 1;
-                        }
-                    }
-                }
-            }
-            else if (colonne == 3)
-            {
-                for (int i = ligne - 1; i <= ligne + 1; i++)
-                {
-                    for (int n = colonne - 1; n <= colonne; n++)
-                    {
-                        if (plateauchar[i, n] == lettre)
-                        {
-                            int[] tab = { i, n };
-                            piletab.Push(tab);
-                            compteurlettre += 1;
-                        }
-                    }
-                }
-            }
-            else
-            {
-                for (int i = ligne - 1; i <= ligne + 1; i++)
-                {
-                    for (int n = colonne - 1; n <= colonne + 1; n++)
-                    {
-                        if (plateauchar[i, n] == lettre)
-                        {
-                            int[] tab = { i, n };
-                            piletab.Push(tab);
-                            compteurlettre += 1;
-                        }
+
 
                     }
                 }
-            }*/
-            /*for(int i = ligne - 1;i<= ligne + 1; i++)
-            {
-                for(int j = colonne - 1; j<= colonne + 1; j++)
-                {
-                    if(i>= 0 && i<plateauchar.GetLength(0) && j>= 0 && j< plateauchar.GetLength(1))
-                    {
-                        int[] tab = { i, j };
-                        piletab.Push(tab);
-                        compteurlettre++;
-                        
-                    }
-                }
-            }*/
+            }
             int[] tabcompteur = new int[2];
             tabcompteur[0] = compteurlettre;  // Ce tableau sert à avoir le nombre de fois qu'une lettre est présente autour de la position donnée. Cette information sera très utile pour la suite du programme.
             piletab.Push(tabcompteur);
