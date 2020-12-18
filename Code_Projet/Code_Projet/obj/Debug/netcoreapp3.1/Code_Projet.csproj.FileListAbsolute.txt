@@ -1,0 +1,13 @@
+D:\VS Projets\A2 S1\Projet_A2_S1\Projet_Algo_A2_S1\Code_Projet\Code_Projet\bin\Debug\netcoreapp3.1\Code_Projet.exe
+D:\VS Projets\A2 S1\Projet_A2_S1\Projet_Algo_A2_S1\Code_Projet\Code_Projet\bin\Debug\netcoreapp3.1\Code_Projet.deps.json
+D:\VS Projets\A2 S1\Projet_A2_S1\Projet_Algo_A2_S1\Code_Projet\Code_Projet\bin\Debug\netcoreapp3.1\Code_Projet.runtimeconfig.json
+D:\VS Projets\A2 S1\Projet_A2_S1\Projet_Algo_A2_S1\Code_Projet\Code_Projet\bin\Debug\netcoreapp3.1\Code_Projet.runtimeconfig.dev.json
+D:\VS Projets\A2 S1\Projet_A2_S1\Projet_Algo_A2_S1\Code_Projet\Code_Projet\bin\Debug\netcoreapp3.1\Code_Projet.dll
+D:\VS Projets\A2 S1\Projet_A2_S1\Projet_Algo_A2_S1\Code_Projet\Code_Projet\bin\Debug\netcoreapp3.1\Code_Projet.pdb
+D:\VS Projets\A2 S1\Projet_A2_S1\Projet_Algo_A2_S1\Code_Projet\Code_Projet\obj\Debug\netcoreapp3.1\Code_Projet.csprojAssemblyReference.cache
+D:\VS Projets\A2 S1\Projet_A2_S1\Projet_Algo_A2_S1\Code_Projet\Code_Projet\obj\Debug\netcoreapp3.1\Code_Projet.AssemblyInfoInputs.cache
+D:\VS Projets\A2 S1\Projet_A2_S1\Projet_Algo_A2_S1\Code_Projet\Code_Projet\obj\Debug\netcoreapp3.1\Code_Projet.AssemblyInfo.cs
+D:\VS Projets\A2 S1\Projet_A2_S1\Projet_Algo_A2_S1\Code_Projet\Code_Projet\obj\Debug\netcoreapp3.1\Code_Projet.csproj.CoreCompileInputs.cache
+D:\VS Projets\A2 S1\Projet_A2_S1\Projet_Algo_A2_S1\Code_Projet\Code_Projet\obj\Debug\netcoreapp3.1\Code_Projet.dll
+D:\VS Projets\A2 S1\Projet_A2_S1\Projet_Algo_A2_S1\Code_Projet\Code_Projet\obj\Debug\netcoreapp3.1\Code_Projet.pdb
+D:\VS Projets\A2 S1\Projet_A2_S1\Projet_Algo_A2_S1\Code_Projet\Code_Projet\obj\Debug\netcoreapp3.1\Code_Projet.genruntimeconfig.cache
