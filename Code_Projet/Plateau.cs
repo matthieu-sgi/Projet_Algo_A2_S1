@@ -1,20 +1,24 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace Code_Projet
 {
     class Plateau
     {
-        private De[,] plateau;
-        
-        
+        private De[,] plateau = new De[4, 4];
+
+
 
 
         public Plateau(string _path_de) //Constructeur du plateau. Prend en paramètre un tableau de dés et le transforme en matrice 4x4.
         {
             this.Create_Plateau(_path_de);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public string toString()  //Méthode toString permettant d'afficher le plateau de jeu dans l'état actuel.
         {
             string s = "Le plateau est le suivant : \n";
@@ -32,19 +36,27 @@ namespace Code_Projet
             }
             return s;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="path_de"></param>
         public void Create_Plateau(string path_de)
         {
             De.ReadFile(path_de);
+
             for (int i = 0; i < 4; i++)
             {
                 for (int j = 0; j < 4; j++)
                 {
-                    this.plateau[i,j] = new De();
+                    this.plateau[i, j] = new De();
                 }
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="mot"></param>
+        /// <returns></returns>
         public bool Test_Plateau(string mot)
         {
             Stack<int[]> PileLettreDepart = new Stack<int[]>();
@@ -91,7 +103,14 @@ namespace Code_Projet
         }
 
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="mot"></param>
+        /// <param name="ligne"></param>
+        /// <param name="colonne"></param>
+        /// <param name="plateauchar"></param>
+        /// <returns></returns>
         public bool Recursivite_Plateau(string mot, int ligne, int colonne, char[,] plateauchar)
 
         //plusieurs problèmes : d'abord, je n'arrive pas à
@@ -120,28 +139,45 @@ namespace Code_Projet
                 if (tab[0] == 1)
                 {
                     tab = piletab.Pop();
-                    return Recursivite_Plateau(mot.Remove(0, 1), tab[0], tab[1],plateauchar);
+                    return Recursivite_Plateau(mot.Remove(0, 1), tab[0], tab[1], plateauchar);
                 }
                 else
                 {
                     int a = tab[0];
                     for (int i = 1; i <= a; i++)
                     {
-                        tab = null;
-                        tab = piletab.Pop();
-                        piletemp = Test_Voisin(mot[1], tab[0], tab[1], plateauchar);
-                        tabtemp = piletemp.Pop();
-                        if (tabtemp[0] == 1)
+                        if (mot.Length < 2)
                         {
-                            break;
+                            return true;
+                        }
+                        else
+                        {
+                            tab = null;
+                            tab = piletab.Pop();
+                            piletemp = Test_Voisin(mot[1], tab[0], tab[1], plateauchar);
+                            tabtemp = piletemp.Pop();
+                            if (tabtemp[0] == 1)
+                            {
+                                break;
+                            }
+
                         }
                     }
+                    return Recursivite_Plateau(mot.Remove(0, 1), tab[0], tab[1], plateauchar);
 
-                    return Recursivite_Plateau(mot.Remove(0, 1), tab[0], tab[1],plateauchar);
                 }
             }
         }
-        static Stack<int[]> Test_Voisin(char lettre, int ligne, int colonne, char[,] plateauchar )
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="lettre"></param>
+        /// <param name="ligne"></param>
+        /// <param name="colonne"></param>
+        /// <param name="plateauchar"></param>
+        /// <returns></returns>
+        static Stack<int[]> Test_Voisin(char lettre, int ligne, int colonne, char[,] plateauchar)
         {
             Stack<int[]> piletab = new Stack<int[]>();
             int compteurlettre = 0;
@@ -289,6 +325,20 @@ namespace Code_Projet
 
             return piletab;
 
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Print_plateau()
+        {
+            for (int i = 0; i < this.plateau.GetLength(0); i++)
+            {
+                for (int j = 0; j < this.plateau.GetLength(1); j++)
+                {
+                    Console.Write(this.plateau[i, j].Get_Face_Superieur + " ");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
