@@ -22,5 +22,44 @@ namespace Test_Unitaires_Projet
 
             Assert.IsTrue(achieve);
         }
+        [TestMethod]
+        public void TestMethod_Add_Mot()
+        {
+            Code_Projet.Joueur Hugo = new Code_Projet.Joueur("Hugo");
+            string mot = "mot";
+
+            Hugo.Add_Mot(mot);
+            int score = Hugo.Score;
+
+            Assert.AreEqual(2, score);
+        }
+        [TestMethod]
+        public void TestMethod_Contains()
+        {
+            List<string> words = new List<string>();
+            words.Add("mot");
+            Code_Projet.Joueur Hugo = new Code_Projet.Joueur("Hugo", 0, words);
+            string mot = "mot";
+
+            bool existe = words.Contains(mot);
+
+            Assert.AreEqual(true, existe);
+
+        }
+        [TestMethod]
+        public void TestMethod_toString_Joueur()
+        {
+            List<string> words = new List<string>();
+            words.Add("mot");
+            words.Add("idée");
+            Code_Projet.Joueur Hugo = new Code_Projet.Joueur("Hugo", 12, words);
+
+            string s = Hugo.toString();
+
+            Assert.AreEqual("Le joueur Hugo a un score de 12 et à trouvé 2 mots", s);
+        }
+
+
+
     }
 }
