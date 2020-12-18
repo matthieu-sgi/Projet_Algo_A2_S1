@@ -9,7 +9,7 @@ namespace Code_Projet
     {
         static void Main(string[] args)
         {
-            // Si vous avez déplacer les fichiers Dictionnaire.txt et Des.txt, veuillez renseigner leurs nouvelles positions 
+            // Si vous avez déplacé les fichiers Dictionnaire.txt et Des.txt, veuillez renseigner leurs nouvelles positions 
             string path_fichier_de = @".\Fichiers_importes\Des.txt"; 
             string path_Dictionnaire_Francais = @".\Fichiers_importes\Dictionnaire.txt"; 
 
