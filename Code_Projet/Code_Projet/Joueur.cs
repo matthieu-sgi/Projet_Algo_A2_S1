@@ -47,10 +47,25 @@ namespace Code_Projet
             this.words = _words;
         }
 
-        public Joueur(string _name)// Constructeur principal
+        /// <summary>
+        /// Constructeur principal pour un joueur classique
+        /// </summary>
+        /// <param name="_name"></param>
+        public Joueur(string _name)
         {
             this.name = _name;
             this.score = 0;
+
+        }
+
+        /// <summary>
+        /// Constructeur pour une IA
+        /// </summary>
+        public Joueur()
+        {
+            this.name = "Destroyer 2000";
+            this.score = 0;
+            
 
         }
 
@@ -129,5 +144,28 @@ namespace Code_Projet
         {
             return "Le joueur " + this.name + " a un score de " + this.score + " et à trouvé " + this.words.Count + " mots";
         }
+
+
+        #region Partie du code pour l'IA
+        public void Find_All_Words(Dictionnaire dico, Plateau gameboard, char separator)
+        {
+            for(int i = 0; i < dico.Dico_Complet.Count; i++)
+            {
+                for(int j = 0; j < dico.Dico_Complet[i].Split(separator).Length; j++)
+                {
+                    bool found = gameboard.Test_Plateau(dico.Dico_Complet[i].Split(separator)[j]);
+                    if (found) this.Add_Mot(dico.Dico_Complet[i].Split(separator)[j]);
+                }
+            }
+
+        }
+
+        
+
+
+
+
+        #endregion
+
     }
 }

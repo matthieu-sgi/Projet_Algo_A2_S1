@@ -16,10 +16,45 @@ namespace Code_Projet
 
             List<Joueur> joueurs = new List<Joueur>(); //Création de la liste de joueurs
             //Ajout des joueurs
-            Console.WriteLine("Entrer le nom du joueur n°1");
-            joueurs.Add(new Joueur(Console.ReadLine()));
-            Console.WriteLine("Entrer le nom du joueur n°2");
-            joueurs.Add(new Joueur(Console.ReadLine()));
+            bool wanting_an_IA = false;
+            Console.Write("Voulez-vous jouer contre une IA ? (y/N) : ");
+            string retour_user = Console.ReadLine();
+            retour_user = retour_user.ToUpper();
+            bool test_ia = false;
+
+            while(!test_ia) //Choix de l'ajout de l'IA
+            {
+                switch (retour_user)
+                {
+                    
+                    case "Y":
+                        wanting_an_IA = true;
+                        test_ia = true;
+                        break;
+
+                    case "":
+                    case "N":
+                        wanting_an_IA = false;
+                        test_ia = true;
+                        break;
+                    default:
+                        break;
+
+                }
+            }
+
+            if (!wanting_an_IA)
+            {
+                Console.WriteLine("Entrer le nom du joueur n°1");
+                joueurs.Add(new Joueur(Console.ReadLine()));
+                Console.WriteLine("Entrer le nom du joueur n°2");
+                joueurs.Add(new Joueur(Console.ReadLine()));
+            }else
+            {
+                Console.WriteLine("Entrer le nom du joueur");
+                joueurs.Add(new Joueur(Console.ReadLine()));
+                joueurs.Add(new Joueur());
+            }
 
             //Création du jeu
             Jeu game = new Jeu(path_fichier_de, path_Dictionnaire_Francais, "Francais", joueurs); //Si vous voulez spécifier un séparateur, ajoutez le séparateur en argument
@@ -28,17 +63,27 @@ namespace Code_Projet
 
             while (tour <= 6) //On a choisi de compter en nombre de tour de 1min (6 tours = 6 min)
             {
-                if (counter_player < joueurs.Count)
+                if (!wanting_an_IA)
                 {
-                    Console.WriteLine("Au tour de " + joueurs[counter_player].Name);
+                    if (counter_player < joueurs.Count)
+                    {
+                        Console.WriteLine("Au tour de " + joueurs[counter_player].Name);
+                        game.Tour(counter_player); //On fait jouer le joueur
+                        tour++;
+                        counter_player++;
+
+
+                    }
+                    else counter_player = 0;
+                }
+                else
+                {
+                    Console.WriteLine("Au tour de " + joueurs[0].Name);
                     game.Tour(counter_player); //On fait jouer le joueur
                     tour++;
-                    counter_player++;
-
-
+                    game.IA_turn();
+                    tour++;
                 }
-                else counter_player = 0;
-
 
             }
 

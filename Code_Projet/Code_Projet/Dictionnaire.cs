@@ -20,6 +20,7 @@ namespace Code_Projet
         {
             get { return this.dico; }
         }
+
         /// <summary>
         /// Propriété permettant d'accéder au nombre de lettre du plus petit mot du dictionnaire
         /// </summary>

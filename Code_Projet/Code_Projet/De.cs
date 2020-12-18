@@ -20,6 +20,14 @@ namespace Code_Projet
 
         }
 
+        /// <summary>
+        /// Propriété de classe pour le test unitaire
+        /// </summary>
+        public static Queue<string> De_extrait
+        {
+            get { return extract_de; }
+        }
+
        
 
         /// <summary>

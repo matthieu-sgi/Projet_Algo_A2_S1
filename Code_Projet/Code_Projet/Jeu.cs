@@ -114,6 +114,22 @@ namespace Code_Projet
 
         }
 
+        #region Partie du code pour l'IA
+        public void IA_turn()
+        {
+            Console.WriteLine("Tu n'as aucune chance de me vaincre, regarde : ");
+            this.monplateau.Print_plateau();
+            this.joueurs[1].Find_All_Words(this.mondico, this.monplateau, this.mondico.Separator);
+            Console.WriteLine("Je suis juste plus fort que toi, voici les mots que j'ai trouvé :");
+            this.joueurs[1].Print_Words();
+            Console.Write("Voici mes points : " + this.joueurs[1].Score + "\n(Appuie sur une touche pour essayer de gagner");
+            Console.ReadKey();
+            
+
+        }
+
+        #endregion
+
 
 
     }
