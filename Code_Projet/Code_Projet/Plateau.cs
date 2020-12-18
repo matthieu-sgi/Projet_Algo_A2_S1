@@ -4,7 +4,7 @@ using System.IO;
 
 namespace Code_Projet
 {
-    class Plateau
+    public class Plateau
     {
         private De[,] plateau = new De[4, 4];
 
@@ -43,6 +43,7 @@ namespace Code_Projet
         public void Create_Plateau(string path_de)
         {
             De.ReadFile(path_de);
+            
 
             for (int i = 0; i < 4; i++)
             {

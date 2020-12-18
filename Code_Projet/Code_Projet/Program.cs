@@ -5,13 +5,13 @@ using System.Collections.Generic;
 
 namespace Code_Projet
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             // Si vous avez déplacé les fichiers Dictionnaire.txt et Des.txt, veuillez renseigner leurs nouvelles positions 
-            string path_fichier_de = @"\Fichiers_importes\Des.txt";
-            string path_Dictionnaire_Francais = @"\Fichiers_importes\Dictionnaire.txt";
+            string path_fichier_de = @"..\..\..\..\Fichiers_importes\Des.txt";
+            string path_Dictionnaire_Francais = @"..\..\..\..\Fichiers_importes\Dictionnaire.txt";
 
 
             List<Joueur> joueurs = new List<Joueur>(); //Création de la liste de joueurs

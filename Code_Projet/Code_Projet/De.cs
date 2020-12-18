@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Code_Projet
 {
-    class De
+    public class De
     {
 
         private char de;
@@ -19,6 +19,8 @@ namespace Code_Projet
 
 
         }
+
+       
 
         /// <summary>
         /// Propriété permettant d'accéder à la valeur de la face supérieure du dé en question
@@ -42,6 +44,8 @@ namespace Code_Projet
                 while (sr.Peek() >= 0)
                 {
                     extract_de.Enqueue(sr.ReadLine());
+                    
+                    
 
 
 

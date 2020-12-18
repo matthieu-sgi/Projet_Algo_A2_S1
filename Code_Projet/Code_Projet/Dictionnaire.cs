@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Code_Projet
 {
-    class Dictionnaire
+    public class Dictionnaire
     {
         private string langage;
         char separator;
