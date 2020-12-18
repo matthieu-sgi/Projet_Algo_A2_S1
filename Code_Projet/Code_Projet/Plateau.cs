@@ -16,10 +16,10 @@ namespace Code_Projet
             this.Create_Plateau(_path_de);
         }
         /// <summary>
-        /// 
+        /// Méthode toString permettant d'afficher le plateau de jeu dans l'état actuel, équivalent de la fonction affichage tableau 
         /// </summary>
         /// <returns></returns>
-        public string toString()  //Méthode toString permettant d'afficher le plateau de jeu dans l'état actuel.
+        public string toString()
         {
             string s = "Le plateau est le suivant : \n";
             for (int i = 0; i < 4; i++)
@@ -220,7 +220,7 @@ namespace Code_Projet
 
         }
         /// <summary>
-        /// Fonction d'affichage propre du plateau en cours
+        /// Fonction d'affichage propre au plateau en cours
         /// </summary>
         public void Print_plateau()
         {
