@@ -7,7 +7,7 @@ namespace Code_Projet
     /// <summary>
     /// Classe Joueur permettant la création d'un objet joueur caractérisé par son nom, son score et une liste de mots
     /// </summary>
-    class Joueur
+    public class Joueur
     {
         private string name;
         private int score;

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Code_Projet
 {
-    class Jeu
+    public class Jeu
     {
         private Dictionnaire mondico;
         private Plateau monplateau;
