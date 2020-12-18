@@ -158,7 +158,7 @@ namespace Code_Projet
                                 for (int j = 1; j <= b; j++) //Même boucle for.
                                 {
                                     tabtemp2 = piletemp.Pop();
-                                    piletemp2 = Test_Voisin(mot[2], tabtemp2[0], tabtemp2[1], plateau);
+                                    piletemp2 = Test_Voisin(mot[2], tabtemp2[0], tabtemp2[1], plateauchar);
                                     tabtemp2 = null;
                                     tabtemp2 = piletemp2.Pop();
                                     if (tabtemp2[0] == 1) // Si la lettre au rang 2 est présente une fois, on quitte les deux boucles for pour prendre ce chemin là. On note qu'on n'effectuera pas de tests supplémentaires car les probabilités de tomber sur un cas comme celui-ci sont déjà extrèmement faibles avec des dés générés au hasard.
